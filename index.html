@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Águila Azul | Psicología Forense y Prevención Emocional Infantil</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        /* --- PALETA DE COLORES INDIGO Y TEAL (Profesional y Vibrante) --- */
+        
+        /* INDIGO PRINCIPAL (Corporativo): #4338CA (Indigo 700 - Nuevo color primario) */
+        .text-primary { color: #4338CA; } 
+        .bg-primary { background-color: #4338CA; }
+        .border-primary { border-color: #4338CA; }
+        
+        /* TEAL (Acento/CTA Principal): #20C997 (Vibrante y moderno) */
+        .text-accent { color: #20C997; }
+        .bg-accent { background-color: #20C997; }
+        .border-accent { border-color: #20C997; }
+        .bg-cta-main { background-color: #20C997; }
+        .border-cta-main { border-color: #20C997; }
+        
+        /* Definición de clase específica para el logo en el header */
+        .text-teal-principal { color: #20C997; } 
+
+        /* VERDE JUSTICIA (Secundario/Pilar Justicia): #28A745 (Mantenido por concepto) */
+        .text-justice { color: #28A745; }
+        .border-justice { border-color: #28A745; }
+
+        /* FONDO CLARO LIGERO: #F0F4FF (¡NUEVO! Tono azul lavanda muy sutil y limpio) */
+        .bg-azul-fondo { background-color: #F0F4FF; }
+        
+        /* FONDO CLARO: #FFFFFF (Blanco Puro para secciones/tarjetas) */
+        .bg-fondo-claro { background-color: #FFFFFF; }
+        
+        /* TEXTO OSCURO: #212529 (Gris muy oscuro para alta legibilidad) */
+        .text-medio { color: #212529; } 
+        .text-oscuro { color: #212529; }
+        
+        /* ESTILOS DE BOTÓN BASE */
+        .btn-base {
+            transition: all 0.3s ease;
+            /* Sombra acorde al nuevo INDIGO primario (RGB 67, 56, 202) */
+            box-shadow: 0 4px 6px rgba(67, 56, 202, 0.2); 
+        }
+        .btn-base:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 10px rgba(67, 56, 202, 0.4);
+        }
+        .icon-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 9999px;
+            /* Fondo de icono claro, acorde al indigo */
+            background-color: #E8E5FF; /* Tono de Indigo muy claro */
+        }
+
+        /* Estilos específicos para el acordeón */
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        .accordion-content.active {
+            max-height: 500px; /* Suficiente altura para el contenido */
+            padding-top: 1rem;
+        }
+        .accordion-header {
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+        .accordion-header:hover {
+            background-color: #F8F8F8;
+        }
+    </style>
+</head>
+<body class="bg-azul-fondo text-oscuro">
+
+    <!-- Header y Navegación (Fondo INDIGO PRINCIPAL para Contraste) --><header class="bg-primary shadow-lg sticky top-0 z-10">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            
+            <!-- Logo (Texto de "Águila Azul" con colores Teal y Blanco, enlazado al inicio) -->
+            <a href="#" class="flex items-center text-2xl font-bold" aria-label="Ir al inicio">
+                <span class="text-teal-principal">Águila</span> <span class="text-white">Azul</span>
+            </a>
+            
+            <!-- CTA en Header (Utiliza el color BLANCO sobre fondo oscuro) -->
+            <a href="#taller-exclusivo" class="btn-base bg-white text-primary px-6 py-2 rounded-full font-semibold text-sm hover:bg-gray-100">
+                Taller Exclusivo 🚀
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section (Fondo Indigo Claro - #F0F4FF para Alta Legibilidad) --><section class="py-16 md:py-24 bg-azul-fondo text-oscuro">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            
+            <!-- Contenido Principal --><div>
+                <!-- Acento en TEAL --><span class="text-sm font-semibold uppercase tracking-wider text-accent mb-3 inline-block">Prevención Emocional + Rigor Forense</span>
+                <h2 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6 text-primary">
+                    Protege la Infancia: Construye un <span class="text-accent">Apego Seguro</span>, Previene el Mañana.
+                </h2>
+                <!-- Cuerpo de texto en color oscuro para mejor lectura --><p class="text-xl mb-8 text-oscuro">
+                    Somos el puente entre la Psicología Forense y el cuidado emocional. Acompañamos a familias y escuelas con herramientas sólidas para fomentar vínculos sanos y ofrecemos informes periciales éticos cuando la justicia lo requiere.
+                </p>
+                
+                <div class="space-y-4">
+                    <!-- CTA principal (Utiliza el color TEAL/CIAN) --><a href="#taller-exclusivo" class="btn-base bg-cta-main text-white px-8 py-3 text-lg rounded-full font-bold inline-block shadow-lg hover:bg-teal-400">
+                        ✍️ ¡Apúntame al Taller Intensivo!
+                    </a>
+                    <!-- Añado la promesa de la guía aquí --><p class="text-sm text-oscuro ml-4 inline-block"> (Plazas limitadas + <strong class="text-primary">Guía GRATIS: 5 Claves para un Apego Seguro</strong>)</p>
+                </div>
+            </div>
+
+            <!-- Imagen Conceptual y Valor --><div class="relative hidden lg:block overflow-hidden rounded-xl shadow-2xl">
+                <img 
+                    src="https://placehold.co/600x400/4338CA/FFFFFF?text=Apego+Seguro" 
+                    alt="Padres e hijos construyendo apego seguro." 
+                    class="w-full h-auto object-cover"
+                >
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: Activación de Conciencia y Dolor (Fondo INDIGO PRINCIPAL) --><section class="py-16 bg-primary text-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <!-- Spans y títulos en blanco para contraste --><span class="text-lg font-semibold text-accent uppercase">Activa tu Prevención</span>
+                <h3 class="text-4xl font-extrabold text-white mt-2">¿Te Resuena Alguna de Estas Situaciones?</h3>
+                <p class="text-xl text-gray-200 mt-4">Haz clic en cada sección para ver las preguntas. Si respondes "sí" a varias, este recurso está diseñado para ti.</p>
+            </div>
+
+            <!-- Contenedor de 4 tarjetas responsivas con funcionalidad de acordeón --><div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+                
+                <!-- Tarjeta 1: Conexión Emocional Diaria (Borde Primary) --><div class="bg-fondo-claro rounded-xl shadow-md border-t-4 border-primary overflow-hidden">
+                    <!-- Encabezado clicable para acordeón --><div class="accordion-header p-6 flex justify-between items-center" data-accordion="accordion-1">
+                        <h4 class="text-xl font-bold text-primary flex items-center">
+                            <span class="mr-2 text-2xl">❤️</span> Conexión Diaria
+                        </h4>
+                        <span class="text-primary text-2xl transform transition-transform duration-300 rotate-0" data-icon="accordion-1">+</span>
+                    </div>
+                    <!-- Contenido (inicialmente oculto) --><div class="accordion-content p-6 pt-0" id="accordion-1">
+                        <ul class="space-y-2 text-oscuro text-sm list-disc list-inside">
+                            <li>¿Sientes que tu hijo se aleja justo cuando más intentas acercarte?</li>
+                            <li>¿Te cuesta conectar con él cuando está enfadado o triste?</li>
+                            <li>¿Tienes la sensación de que, por más que hablas, no te escucha?</li>
+                            <li>¿Te resulta fácil leer lo que necesita?</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2: Reacciones Emocionales Intensas (Borde Primary) --><div class="bg-fondo-claro rounded-xl shadow-md border-t-4 border-primary overflow-hidden">
+                    <!-- Encabezado clicable para acordeón --><div class="accordion-header p-6 flex justify-between items-center" data-accordion="accordion-2">
+                        <h4 class="text-xl font-bold text-primary flex items-center">
+                            <span class="mr-2 text-2xl">🔥</span> Reacciones Intensas
+                        </h4>
+                        <span class="text-primary text-2xl transform transition-transform duration-300 rotate-0" data-icon="accordion-2">+</span>
+                    </div>
+                    <!-- Contenido (inicialmente oculto) --><div class="accordion-content p-6 pt-0" id="accordion-2">
+                        <ul class="space-y-2 text-oscuro text-sm list-disc list-inside">
+                            <li>¿Sientes que sus reacciones son exageradas para lo que ha ocurrido?</li>
+                            <li>¿Tiende a ponerse muy nervioso, enfadado o triste con facilidad?</li>
+                            <li>¿Te encuentras pensando que "no debería afectarle tanto"?</li>
+                            <li>¿Cómo reacciona él o ella cuando tú te enfadas o te alejas?</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3: Seguridad y Vínculo (Borde Accent/Teal) --><div class="bg-fondo-claro rounded-xl shadow-md border-t-4 border-accent overflow-hidden">
+                    <!-- Encabezado clicable para acordeón --><div class="accordion-header p-6 flex justify-between items-center" data-accordion="accordion-3">
+                        <h4 class="text-xl font-bold text-accent flex items-center">
+                            <span class="mr-2 text-2xl">🔒</span> Seguridad y Vínculo
+                        </h4>
+                        <span class="text-accent text-2xl transform transition-transform duration-300 rotate-0" data-icon="accordion-3">+</span>
+                    </div>
+                    <!-- Contenido (inicialmente oculto) --><div class="accordion-content p-6 pt-0" id="accordion-3">
+                        <ul class="space-y-2 text-oscuro text-sm list-disc list-inside">
+                            <li>¿Crees que tu hijo confía en que estarás disponible cuando te necesita?</li>
+                            <li>¿Notas que busca mucho tu aprobación o teme decepcionarte?</li>
+                            <li>¿Tiende a evitar hablar de lo que siente o a esconder sus emociones?</li>
+                            <li>¿Sientes que puede contar contigo incluso cuando se equivoca?</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 4: Dinámica y Apego Adulto (Borde Accent/Teal) --><div class="bg-fondo-claro rounded-xl shadow-md border-t-4 border-accent overflow-hidden">
+                    <!-- Encabezado clicable para acordeón --><div class="accordion-header p-6 flex justify-between items-center" data-accordion="accordion-4">
+                        <h4 class="text-xl font-bold text-accent flex items-center">
+                            <span class="mr-2 text-2xl">🔄</span> Apego Adulto
+                        </h4>
+                        <span class="text-accent text-2xl transform transition-transform duration-300 rotate-0" data-icon="accordion-4">+</span>
+                    </div>
+                    <!-- Contenido (inicialmente oculto) --><div class="accordion-content p-6 pt-0" id="accordion-4">
+                        <ul class="space-y-2 text-oscuro text-sm list-disc list-inside">
+                            <li>¿Cómo son los momentos de más tensión familiar? ¿Qué suele detonarlos?</li>
+                            <li>¿Sientes que el ritmo diario os deja poco tiempo de calidad?</li>
+                            <li>¿Has pensado en cómo fue tu propio vínculo con tus padres?</li>
+                            <li>¿Crees que repites algunas formas de reaccionar que viviste?</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <h4 class="text-2xl font-bold text-white mb-4">Si te identificas, tienes la necesidad de saber cómo actuar.</h4>
+                <!-- CTA de pie de sección (Utiliza el color TEAL/CIAN) --><a href="#taller-exclusivo" class="btn-base bg-cta-main text-white px-8 py-3 text-lg rounded-full font-bold inline-block shadow-lg hover:bg-teal-400 border-2 border-cta-main">
+                    Quiero Acceso Prioritario al Taller ➡️
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- NUEVA SECCIÓN: Beneficios del Apego Seguro (Fondo Blanco) --><section class="py-16 bg-fondo-claro text-oscuro">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="text-3xl font-bold text-primary mb-4">La Recompensa: Cómo se Manifiesta el Apego Seguro</h3>
+            <p class="text-xl mb-12 max-w-3xl mx-auto">Al construir vínculos sólidos basados en la confianza y la disponibilidad, verás una transformación positiva en el desarrollo de tu hijo.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Beneficio 1: Regulación Emocional (Borde Primary) --><div class="p-6 bg-azul-fondo rounded-xl shadow-lg border-b-4 border-primary">
+                    <div class="icon-box mx-auto mb-4 text-primary bg-primary/20">
+                        <span class="text-2xl" role="img" aria-label="Calma">🧘</span>
+                    </div>
+                    <h4 class="text-xl font-semibold text-primary mb-2">Mejor Regulación Emocional</h4>
+                    <p class="text-sm">Menos rabietas, más calma. Los niños aprenden a gestionar sus emociones intensas porque saben que tienen un puerto seguro al que regresar.</p>
+                </div>
+
+                <!-- Beneficio 2: Autoestima y Confianza (Borde Accent/Teal) --><div class="p-6 bg-azul-fondo rounded-xl shadow-lg border-b-4 border-accent">
+                    <div class="icon-box mx-auto mb-4 text-accent bg-accent/20">
+                        <span class="text-2xl" role="img" aria-label="Confianza">💪</span>
+                    </div>
+                    <h4 class="text-xl font-semibold text-primary mb-2">Mayor Autoestima y Confianza</h4>
+                    <p class="text-sm">Saben que son valiosos incondicionalmente. Esto les permite explorar el mundo con curiosidad y afrontar desafíos con valentía.</p>
+                </div>
+
+                <!-- Beneficio 3: Habilidades Sociales (Borde Justice Green) --><div class="p-6 bg-azul-fondo rounded-xl shadow-lg border-b-4 border-justice">
+                    <div class="icon-box mx-auto mb-4 text-justice bg-justice/20">
+                        <span class="text-2xl" role="img" aria-label="Amigos">🤝</span>
+                    </div>
+                    <h4 class="text-xl font-semibold text-primary mb-2">Relaciones Sociales Sanas</h4>
+                    <p class="text-sm">El apego seguro es el modelo. Les enseña a ser empáticos, a resolver conflictos de forma constructiva y a elegir relaciones respetuosas.</p>
+                </div>
+
+                <!-- Beneficio 4: Rendimiento Académico (Borde Primary) --><div class="p-6 bg-azul-fondo rounded-xl shadow-lg border-b-4 border-primary">
+                    <div class="icon-box mx-auto mb-4 text-primary bg-primary/20">
+                        <span class="text-2xl" role="img" aria-label="Libro">📚</span>
+                    </div>
+                    <h4 class="text-xl font-semibold text-primary mb-2">Mejor Capacidad de Aprendizaje</h4>
+                    <p class="text-sm">Al tener su base emocional cubierta, su mente está libre para la curiosidad, la concentración y el rendimiento escolar óptimo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Valor / Los 3 Pilares (Fondo INDIGO PRINCIPAL) --><section class="py-16 bg-primary text-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <!-- Título ajustado al nuevo flujo --><h3 class="text-3xl font-bold text-white mb-4">Tres Águilas, un mismo propósito</h3>
+            <p class="text-lg mb-12 max-w-3xl mx-auto text-gray-200">Intervenimos desde la formación temprana hasta los procesos legales más complejos, siempre con el bienestar del menor como prioridad absoluta.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Pilar 1: Familias (Fondo Blanco, Borde Primary) --><div class="p-6 bg-fondo-claro rounded-xl shadow-lg border-t-4 border-primary">
+                    <div class="icon-box mx-auto mb-4 text-primary">
+                        <span class="text-2xl" role="img" aria-label="Familia">👨‍👩‍👧‍👦</span>
+                    </div>
+                    <h4 class="text-xl font-semibold text-primary mb-2">Águila Familias</h4>
+                    <p class="text-oscuro">Recursos y talleres online para padres y cuidadores que buscan construir vínculos de apego seguros y gestionar las emociones en casa.</p>
+                </div>
+
+                <!-- Pilar 2: Escuelas (Fondo Blanco, Borde Accent/Teal) --><div class="p-6 bg-fondo-claro rounded-xl shadow-lg border-t-4 border-accent">
+                    <div class="icon-box mx-auto mb-4 text-accent">
+                        <span class="text-2xl" role="img" aria-label="Escuela">🏫</span>
+                    </div>
+                    <h4 class="text-xl font-semibold text-primary mb-2">Águila Escuelas</h4>
+                    <p class="text-oscuro">Formación y asesoramiento a equipos docentes sobre convivencia escolar, apego y estrategias preventivas en el entorno educativo.</p>
+                </div>
+
+                <!-- Pilar 3: Justicia (Fondo Blanco, Borde Justice Green) --><div class="p-6 bg-fondo-claro rounded-xl shadow-lg border-t-4 border-justice">
+                    <div class="icon-box mx-auto mb-4 text-justice">
+                        <span class="text-2xl" role="img" aria-label="Justicia">⚖️</span>
+                    </div>
+                    <h4 class="text-xl font-semibold text-primary mb-2">Águila Justicia</h4>
+                    <p class="text-oscuro">Informes periciales psicológicos rigurosos y objetivos en procesos de custodia y régimen de visitas, garantizando el interés superior del menor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sección de Captación de Leads (Fondo Accent/Teal) --><section id="taller-exclusivo" class="py-16 bg-accent text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <!-- Título modificado para incluir la guía --><h3 class="text-3xl font-bold mb-4">Taller Intensivo + Guía Gratis: 5 Claves para un Apego Seguro</h3>
+            <!-- Texto modificado para incluir la descarga instantánea --><p class="text-xl font-medium mb-8">Este taller transformador tiene plazas limitadas. Regístrate ahora para ser el primero en recibir la información de fechas y <strong>descargar tu guía exclusiva al instante</strong>.</p>
+            
+            <div id="form-container">
+                <!-- Formulario con fondo blanco para contraste y usabilidad --><form id="lead-form" class="max-w-lg mx-auto bg-fondo-claro p-6 rounded-xl shadow-2xl">
+                    <div class="space-y-4">
+                        <input type="text" id="name" placeholder="Tu Nombre" required class="w-full p-3 border border-gray-300 rounded-lg text-oscuro focus:ring-primary focus:border-primary">
+                        <input type="email" id="email" placeholder="Tu Email Principal" required class="w-full p-3 border border-gray-300 rounded-lg text-oscuro focus:ring-primary focus:border-primary">
+                        
+                        <div class="text-left pt-2">
+                             <label for="interest" class="block text-sm font-medium text-oscuro mb-2">¿Cuál es tu principal interés?</label>
+                             <select id="interest" required class="w-full p-3 border border-gray-300 rounded-lg text-oscuro focus:ring-primary focus:border-primary">
+                                 <option value="" disabled selected>Selecciona una opción...</option>
+                                 <option value="familia">Recursos y Talleres para Familias</option>
+                                 <option value="escuela">Formación y Protocolos para Escuelas</option>
+                                 <option value="justicia">Informes Periciales / Servicios Legales</option>
+                             </select>
+                        </div>
+                        
+                        <!-- Botón del formulario (Utiliza el color TEAL/CIAN y texto BLANCO) --><button type="submit" class="btn-base w-full bg-cta-main text-white px-8 py-3 text-lg rounded-lg font-bold hover:bg-teal-400">
+                            ✅ Sí, Quiero el Taller + Guía GRATIS
+                        </button>
+                    </div>
+                    <p class="text-xs text-gray-500 mt-4">Prometemos no enviar spam. Consulta nuestra política de privacidad.</p>
+                </form>
+            </div>
+
+            <!-- Mensaje de éxito (Fondo Primary Indigo) -->
+            <div id="success-message" class="hidden max-w-lg mx-auto bg-primary p-8 rounded-xl shadow-2xl mt-6 text-white">
+                <p class="text-2xl font-bold mb-3">¡Registro Confirmado!</p>
+                <p class="text-lg mb-6">Hemos asegurado tu plaza. Ahora, descarga tu guía exclusiva al instante:</p>
+                <!-- NUEVO: Enlace de Descarga de Guía (Reemplaza el '#' por el enlace de tu PDF) -->
+                <a href="#" id="guide-download-link" class="btn-base bg-accent text-white px-8 py-3 text-lg rounded-full font-bold inline-block shadow-lg hover:bg-teal-400">
+                    ⬇️ Descargar Guía GRATIS Ahora
+                </a>
+                <p class="text-sm mt-4 text-gray-200">También la hemos enviado a tu email, por si quieres consultarla después.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Confianza / La Experta (Fondo Blanco, revertido) --><section class="py-16 bg-fondo-claro text-oscuro">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-3 gap-10 items-center">
+            
+            <div class="lg:col-span-2">
+                <h3 class="text-3xl font-bold text-primary mb-4">Conoce a Mercedes: Rigor Científico y Comprensión Humana</h3>
+                <p class="text-xl font-semibold text-primary mb-4">
+                    Soy la persona detrás de Águila Azul, un proyecto que une el <strong>rigor científico</strong> con la <strong>comprensión humana</strong>.
+                </p>
+                
+                <h4 class="text-2xl font-bold text-accent mt-6 mb-3">Mis Credenciales</h4>
+                <ul class="space-y-2 text-oscuro mb-6">
+                    <li class="flex items-center text-primary"><span class="text-accent mr-2">🎓</span> Graduada en Psicología (UNED).</li>
+                    <li class="flex items-center text-primary"><span class="text-accent mr-2">⚖️</span> Máster en Psicóloga Forense (Universidad Internacional Isabel I de Castilla).</li>
+                    <li class="flex items-center text-primary"><span class="text-accent mr-2">🕵️‍♀️</span> Diplomada Superior en Criminología (Universidad de Oviedo).</li>
+                </ul>
+
+                <p class="text-lg text-oscuro mb-4">
+                    Desde que descubrí la teoría del apego, y reforzado por mi experiencia como madre, me apasionó la importancia de los <strong>vínculos seguros</strong>. De ahí nace mi convicción más profunda: <strong>la mejor intervención es la prevención</strong>.
+                </p>
+                <p class="text-lg text-oscuro mb-4">
+                    Águila Azul surge de ese compromiso: acercar el conocimiento sobre el desarrollo emocional infantil a familias, escuelas y profesionales, de manera cercana, humana y comprensible. Creo firmemente que <strong>cuidar los vínculos es proteger la infancia</strong>.
+                </p>
+
+                <div class="border-l-4 border-primary pl-4 mt-6">
+                    <p class="italic text-xl text-primary">“Desde raíces seguras, crecen alas fuertes"</p>
+                </div>
+            </div>
+            
+            <div class="flex flex-col items-center">
+                <!-- Imagen de la experta (Borde en Accent/Teal) --><img 
+                    src="https://placehold.co/150x150/4338CA/FFFFFF?text=Mercedes" 
+                    alt="Retrato profesional de Mercedes, Fundadora." 
+                    class="w-32 h-32 object-cover rounded-full border-4 border-accent shadow-lg"
+                >
+                <!-- Texto en color primario --><p class="mt-4 text-center text-xl font-semibold text-primary">Mercedes</p>
+                <p class="text-center text-sm text-oscuro">Fundadora y Psicóloga Forense</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA de Cierre (Fondo Indigo Claro) --><section class="py-12 bg-azul-fondo text-center">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-3xl font-bold text-primary mb-4">No Esperes a que sea Tarde</h3>
+            <p class="text-xl text-oscuro mb-8">Empieza a construir un entorno seguro hoy mismo. Regístrate para el Taller Intensivo y recibe tu guía gratuita.</p>
+            <!-- CTA de cierre (Utiliza el color TEAL/CIAN) --><a href="#taller-exclusivo" class="btn-base bg-cta-main text-white px-8 py-3 text-lg rounded-full font-bold inline-block shadow-lg hover:bg-teal-400 border-2 border-cta-main">
+                Quiero Mi Acceso + Guía GRATIS ➡️
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer (Fondo Primary Indigo) --><footer class="bg-dark-gray text-white py-8 bg-primary">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-lg font-bold mb-2">Águila Azul</p>
+            <p class="text-sm text-gray-200">&copy; 2024 Águila Azul. Todos los derechos reservados.</p>
+            <div class="mt-4 space-x-4 text-sm">
+                <a href="#" class="text-gray-200 hover:text-white">Aviso Legal</a>
+                <a href="#" class="text-gray-200 hover:text-white">Política de Privacidad</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Lógica de Acordeón para las tarjetas de Situaciones
+        document.addEventListener('DOMContentLoaded', () => {
+            const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+            accordionHeaders.forEach(header => {
+                header.addEventListener('click', () => {
+                    // Obtiene el ID del contenido a mostrar/ocultar
+                    const contentId = header.getAttribute('data-accordion');
+                    const content = document.getElementById(contentId);
+                    const icon = document.querySelector(`[data-icon="${contentId}"]`);
+
+                    // Verifica si el contenido ya está activo
+                    const isActive = content.classList.contains('active');
+
+                    // Oculta todos los contenidos y resetea los iconos
+                    accordionHeaders.forEach(h => {
+                        const otherContentId = h.getAttribute('data-accordion');
+                        const otherContent = document.getElementById(otherContentId);
+                        const otherIcon = document.querySelector(`[data-icon="${otherContentId}"]`);
+                        
+                        // Resetea el estado visual
+                        otherContent.classList.remove('active');
+                        otherIcon.classList.remove('rotate-180');
+                        otherIcon.textContent = '+';
+                    });
+
+                    // Si el contenido no estaba activo, lo activa (Abre)
+                    if (!isActive) {
+                        content.classList.add('active');
+                        icon.classList.add('rotate-180');
+                        icon.textContent = '-';
+                    }
+                });
+            });
+        });
+
+        // Lógica de Envío de Formulario (sin cambios)
+        document.getElementById('lead-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const interest = document.getElementById('interest').value;
+            
+            /* * En una aplicación real, aquí se enviaría la data (name, email, interest) 
+            * a una herramienta de Email Marketing (Mailchimp, ConvertKit, etc.) o a una base de datos.
+            */
+
+            console.log('--- Datos de Registro Prioritario ---');
+            console.log(`Nombre: ${name}`);
+            console.log(`Email: ${email}`);
+            console.log(`Interés Principal: ${interest}`);
+            console.log('-----------------------------------');
+            
+            // Simulación de éxito y cambio de UI
+            const formContainer = document.getElementById('form-container');
+            const successMessage = document.getElementById('success-message');
+
+            if (formContainer) formContainer.classList.add('hidden');
+            if (successMessage) successMessage.classList.remove('hidden');
+
+            // Opcional: limpiar formulario después de la simulación
+            this.reset();
+        });
+    </script>
+</body>
+</html>
