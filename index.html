@@ -328,7 +328,7 @@
             <div id="success-message" class="hidden max-w-lg mx-auto bg-primary p-8 rounded-xl shadow-2xl mt-6 text-white">
                 <p class="text-2xl font-bold mb-3">¡Registro Confirmado!</p>
                 <p class="text-lg mb-6">Hemos asegurado tu plaza. Ahora, descarga tu guía exclusiva al instante:</p>
-                <!-- NUEVO: Enlace de Descarga de Guía (Reemplaza el '#' por el enlace de tu PDF) -->
+                <!-- Enlace de Descarga de Guía (Reemplaza el '#' por el enlace de tu PDF) -->
                 <a href="#" id="guide-download-link" class="btn-base bg-accent text-white px-8 py-3 text-lg rounded-full font-bold inline-block shadow-lg hover:bg-teal-400">
                     ⬇️ Descargar Guía GRATIS Ahora
                 </a>
@@ -338,9 +338,11 @@
     </section>
 
     <!-- Sección de Confianza / La Experta (Fondo Blanco, revertido) --><section class="py-16 bg-fondo-claro text-oscuro">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-3 gap-10 items-center">
+        <!-- Se ha cambiado la cuadrícula a grid-cols-1 para que el contenido de texto ocupe todo el ancho -->
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 gap-10 items-center">
             
-            <div class="lg:col-span-2">
+            <!-- Este div ahora ocupará el 100% del ancho en escritorio (antes lg:col-span-2) -->
+            <div>
                 <h3 class="text-3xl font-bold text-primary mb-4">Conoce a Mercedes: Rigor Científico y Comprensión Humana</h3>
                 <p class="text-xl font-semibold text-primary mb-4">
                     Soy la persona detrás de Águila Azul, un proyecto que une el <strong>rigor científico</strong> con la <strong>comprensión humana</strong>.
@@ -365,15 +367,7 @@
                 </div>
             </div>
             
-            <div class="flex flex-col items-center">
-                <!-- Imagen de la experta (Borde en Accent/Teal) --><img 
-                    src="https://placehold.co/150x150/4338CA/FFFFFF?text=Mercedes" 
-                    alt="Retrato profesional de Mercedes, Fundadora." 
-                    class="w-32 h-32 object-cover rounded-full border-4 border-accent shadow-lg"
-                >
-                <!-- Texto en color primario --><p class="mt-4 text-center text-xl font-semibold text-primary">Mercedes</p>
-                <p class="text-center text-sm text-oscuro">Fundadora y Psicóloga Forense</p>
-            </div>
+            <!-- EL RETRATO PROFESIONAL HA SIDO ELIMINADO DE ESTA SECCIÓN -->
         </div>
     </section>
     
