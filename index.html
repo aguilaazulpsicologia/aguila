@@ -170,96 +170,90 @@
             </div>
 
             <!-- Contenedor de 4 tarjetas responsivas con funcionalidad de acordeón -->
-            <!-- Usamos grid-cols-1 y solo 3 columnas en LG para asegurar el ancho en dispositivos pequeños/medianos -->
-            <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+            <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
                 
-                <!-- Tarjeta 1: Comunicación (Título en ACCENT/Teal) -->
-                <div class="bg-fondo-claro rounded-xl shadow-md border-t-4 border-accent overflow-hidden">
+                <!-- Tarjeta 1: Conexión Emocional Diaria (Borde Primary) -->
+                <div class="bg-fondo-claro rounded-xl shadow-md border-t-4 border-primary overflow-hidden">
                     <!-- Encabezado clicable para acordeón -->
                     <div class="accordion-header p-6 flex justify-between items-center" data-accordion="accordion-1">
-                        <!-- CAMBIO DE COLOR AQUÍ -->
-                        <h4 class="text-xl font-bold text-accent flex items-center">
+                        <h4 class="text-xl font-bold text-primary flex items-center">
                             <!-- Ícono de Corazón/Conexión -->
                             <span class="mr-3 text-3xl">🔗</span> Comunicación y Distancia
                         </h4>
-                        <span class="text-accent text-2xl transform transition-transform duration-300 rotate-0" data-icon="accordion-1">+</span>
+                        <span class="text-primary text-2xl transform transition-transform duration-300 rotate-0" data-icon="accordion-1">+</span>
                     </div>
                     <!-- Contenido (inicialmente oculto) -->
                     <div class="accordion-content p-6 pt-0" id="accordion-1">
                         <ul class="space-y-3 text-oscuro text-sm">
                             <li class="flex items-start">
-                                <span class="text-accent mr-2 mt-1">💔</span> ¿Tu hijo <strong>se esconde o evita el contacto</strong> cuando está alterado o triste?
+                                <span class="text-primary mr-2 mt-1">💔</span> ¿Sientes que tu hijo se <strong>aleja</strong> justo cuando intentas acercarte?
                             </li>
                             <li class="flex items-start">
-                                <span class="text-accent mr-2 mt-1">👂</span> ¿Sientes que <strong>no puedes anticipar sus necesidades</strong>, y solo reaccionas a las crisis?
+                                <span class="text-primary mr-2 mt-1">👂</span> ¿Te resulta difícil <strong>leer</strong> lo que necesita sin que lo verbalice?
                             </li>
                             <li class="flex items-start">
-                                <span class="text-accent mr-2 mt-1">🗣️</span> ¿Tiene dificultades para <strong>empezar o mantener conversaciones</strong> significativas contigo?
+                                <span class="text-primary mr-2 mt-1">🗣️</span> ¿Tienes la sensación de que, por más que hablas, <strong>no te escucha</strong>?
                             </li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- Tarjeta 2: Conflictos (Título en JUSTICE/Verde) -->
-                <div class="bg-fondo-claro rounded-xl shadow-md border-t-4 border-justice overflow-hidden">
+                <!-- Tarjeta 2: Reacciones Emocionales Intensas (Borde Primary) -->
+                <div class="bg-fondo-claro rounded-xl shadow-md border-t-4 border-primary overflow-hidden">
                     <!-- Encabezado clicable para acordeón -->
                     <div class="accordion-header p-6 flex justify-between items-center" data-accordion="accordion-2">
-                        <!-- CAMBIO DE COLOR AQUÍ -->
-                        <h4 class="text-xl font-bold text-justice flex items-center">
+                        <h4 class="text-xl font-bold text-primary flex items-center">
                             <!-- Ícono de Fuego/Intensidad -->
                             <span class="mr-3 text-3xl">🌪️</span> Manejo de Conflictos y Estrés
                         </h4>
-                        <span class="text-justice text-2xl transform transition-transform duration-300 rotate-0" data-icon="accordion-2">+</span>
+                        <span class="text-primary text-2xl transform transition-transform duration-300 rotate-0" data-icon="accordion-2">+</span>
                     </div>
                     <!-- Contenido (inicialmente oculto) -->
                     <div class="accordion-content p-6 pt-0" id="accordion-2">
                         <ul class="space-y-3 text-oscuro text-sm">
                             <li class="flex items-start">
-                                <span class="text-justice mr-2 mt-1">💥</span> ¿Sus rabietas o enfados son <strong>desproporcionadas</strong> e imposibles de calmar?
+                                <span class="text-primary mr-2 mt-1">💥</span> ¿Sus reacciones son <strong>exageradas</strong> para la situación real?
                             </li>
                             <li class="flex items-start">
-                                <span class="text-justice mr-2 mt-1">😭</span> ¿Le cuesta <strong>volver a la calma</strong> por sí mismo después de una frustración?
+                                <span class="text-primary mr-2 mt-1">😭</span> ¿Tiende a ponerse muy <strong>nervioso o triste** con gran facilidad?
                             </li>
                             <li class="flex items-start">
-                                <span class="text-justice mr-2 mt-1">❓</span> ¿Se aferra a ti o, por el contrario, te <strong>rechaza agresivamente</strong> cuando lo intentas consolar?
+                                <span class="text-primary mr-2 mt-1">❓</span> ¿Cómo reacciona cuando tú te <strong>enfadas o te alejas</strong> de él?
                             </li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- Tarjeta 3: Confianza (Título en PRIMARY/Índigo) -->
-                <div class="bg-fondo-claro rounded-xl shadow-md border-t-4 border-primary overflow-hidden">
+                <!-- Tarjeta 3: Seguridad y Vínculo (Borde Accent/Teal) -->
+                <div class="bg-fondo-claro rounded-xl shadow-md border-t-4 border-accent overflow-hidden">
                     <!-- Encabezado clicable para acordeón -->
                     <div class="accordion-header p-6 flex justify-between items-center" data-accordion="accordion-3">
-                        <!-- CAMBIO DE COLOR AQUÍ -->
-                        <h4 class="text-xl font-bold text-primary flex items-center">
+                        <h4 class="text-xl font-bold text-accent flex items-center">
                             <!-- Ícono de Bloqueo/Seguridad -->
                             <span class="mr-3 text-3xl">🛡️</span> Confianza y Búsqueda de Apoyo
                         </h4>
-                        <span class="text-primary text-2xl transform transition-transform duration-300 rotate-0" data-icon="accordion-3">+</span>
+                        <span class="text-accent text-2xl transform transition-transform duration-300 rotate-0" data-icon="accordion-3">+</span>
                     </div>
                     <!-- Contenido (inicialmente oculto) -->
                     <div class="accordion-content p-6 pt-0" id="accordion-3">
                         <ul class="space-y-3 text-oscuro text-sm">
                             <li class="flex items-start">
-                                <span class="text-primary mr-2 mt-1">😔</span> ¿Notas que <strong>depende excesivamente</strong> de tu presencia para sentirse seguro en entornos nuevos?
+                                <span class="text-accent mr-2 mt-1">😔</span> ¿Notas que <strong>evita</strong> hablar de lo que siente o esconde emociones?
                             </li>
                             <li class="flex items-start">
-                                <span class="text-primary mr-2 mt-1">🙏</span> ¿Busca tu <strong>aprobación</strong> constantemente, temiendo cometer errores?
+                                <span class="text-accent mr-2 mt-1">🙏</span> ¿Busca constantemente tu <strong>aprobación</strong> o teme decepcionarte?
                             </li>
                             <li class="flex items-start">
-                                <span class="text-primary mr-2 mt-1">✔️</span> ¿Muestra una <strong>ansiedad visible</strong> o preocupación cuando te separas de él (ansiedad por separación)?
+                                <span class="text-accent mr-2 mt-1">✔️</span> ¿Cree que estarás <strong>disponible</strong> incondicionalmente cuando te necesite?
                             </li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- Tarjeta 4: Patrones Transgeneracionales (Título en ACCENT/Teal, ocupa 3 columnas) -->
-                <div class="bg-fondo-claro rounded-xl shadow-md border-t-4 border-accent overflow-hidden lg:col-span-3">
-                    <!-- Este elemento ocupa las 3 columnas en desktop para asegurar mucho espacio -->
+                <!-- Tarjeta 4: Dinámica y Apego Adulto (Borde Accent/Teal) -->
+                <div class="bg-fondo-claro rounded-xl shadow-md border-t-4 border-accent overflow-hidden">
                     <!-- Encabezado clicable para acordeón -->
                     <div class="accordion-header p-6 flex justify-between items-center" data-accordion="accordion-4">
-                        <!-- CAMBIO DE COLOR AQUÍ -->
                         <h4 class="text-xl font-bold text-accent flex items-center">
                             <!-- Ícono de Ciclo/Repetición -->
                             <span class="mr-3 text-3xl">🔁</span> Patrones Transgeneracionales
@@ -270,13 +264,13 @@
                     <div class="accordion-content p-6 pt-0" id="accordion-4">
                         <ul class="space-y-3 text-oscuro text-sm">
                             <li class="flex items-start">
-                                <span class="text-accent mr-2 mt-1">⏰</span> ¿Te encuentras a menudo <strong>repitiendo frases</strong> o métodos de disciplina que no te gustaban de tu infancia?
+                                <span class="text-accent mr-2 mt-1">⏰</span> ¿El ritmo diario os deja poco <strong>tiempo de calidad</strong> o de conexión?
                             </li>
                             <li class="flex items-start">
-                                <span class="text-accent mr-2 mt-1">👵</span> ¿Sientes que a veces <strong>pierdes el control</strong> o reaccionas impulsivamente ante su mal comportamiento?
+                                <span class="text-accent mr-2 mt-1">👵</span> ¿Has reflexionado sobre cómo fue tu propio <strong>vínculo de apego</strong> infantil?
                             </li>
                             <li class="flex items-start">
-                                <span class="text-accent mr-2 mt-1">✋</span> ¿El estrés diario está <strong>limitando drásticamente</strong> el tiempo de juego libre y la conexión con tu hijo?
+                                <span class="text-accent mr-2 mt-1">✋</span> ¿Sientes que a veces <strong>repites</strong> formas de reaccionar que viviste con tus padres?
                             </li>
                         </ul>
                     </div>
@@ -536,6 +530,7 @@
     </script>
 </body>
 </html>
+
 
 
 
